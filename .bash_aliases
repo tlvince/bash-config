@@ -23,9 +23,6 @@ alias iftop='sudo iftop -i eth1'
 alias repkg='makepkg -efi'
 alias update='sudo pacman -Syu && aurget -Syu'
 alias uninstall='sudo pacman -Rsn'
-alias install='sudo pacman -S'
-alias pkgsearch='pacman -Ss'
-alias pkginfo='pacman -Si'
 alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
 
 #-----------------------------------------------------------------------
