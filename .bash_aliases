@@ -1,7 +1,6 @@
 # Title:    .bash_aliases
 # Author:   Tom Vincent
 # Created:  2010-02-29
-# Updated:  2010-07-18
 
 #-----------------------------------------------------------------------
 # Overrides
@@ -22,13 +21,11 @@ alias iftop='sudo iftop -i eth1'
 # Package management
 #-----------------------------------------------------------------------
 alias repkg='makepkg -efi'
-alias update='sudo bauerbill -Syu --build-as $(whoami) --aur'
+alias update='sudo pacman -Syu && aurget -Syu'
 alias uninstall='sudo pacman -Rsn'
-alias install='sudo bauerbill -S --build-as $(whoami) --aur'
-alias pkgsearch='bauerbill -Ss --aur'
-alias pkginfo='bauerbill -Si --aur'
-
-# `yaourt -Qqdt` then asks: "remove package with -Rcs"
+alias install='sudo pacman -S'
+alias pkgsearch='pacman -Ss'
+alias pkginfo='pacman -Si'
 alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
 
 #-----------------------------------------------------------------------
