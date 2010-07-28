@@ -1,7 +1,6 @@
 # Title:    .bashrc
 # Author:   Tom Vincent
 # Created:  < 2009-05-07    # When I switched to Arch Linux
-# Version:  2010-05-27
 #
 # Run "source ~/.bashrc" or ". .bashrc" (or logout) to apply changes
 # Run "env" to display all environment variables in use
@@ -12,7 +11,7 @@ source ~/.bash_aliases
 # Load some library functions
 source ~/src/bash/lib/libLoader.sh
 LIBS=(extractArchive spellChecker dictionary calculator upDirectory \
-      locateWorkingDirectory)
+      locateWorkingDirectory pkgtools)
 libLoader ${LIBS[@]}
 
 #-----------------------------------------------------------------------
