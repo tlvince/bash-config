@@ -36,3 +36,4 @@ alias iplayers='sh ~/src/bash/iplayer-stream.sh'
 #alias cls='clear'  # Use CTRL+L
 alias mpdlocal='/usr/bin/mpd ~/.mpd/local/local.conf'
 alias myip='echo $(curl -s http://www.tlvince.com/sandbox/ip.php)'
+alias n='~/proj/src/bash/new-note.bash -a'
