@@ -33,6 +33,7 @@ alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" &&
 alias iplayer='get_iplayer --nopurge'
 alias iplayerd='iplayer --tvmode=flashhd,flashvhigh,flashnormal --get '
 alias iplayers='sh ~/src/bash/iplayer-stream.sh'
-alias mpdlocal='/usr/bin/mpd ~/.mpd/local/local.conf'
+alias mpdlocal='/usr/bin/mpd ~/.mpd/local/local.conf &&
+        mpdscribble --conf ~/.mpdscribble/mpdscribble-local.conf'
 alias myip='echo $(curl -s http://www.tlvince.com/sandbox/ip.php)'
 alias n='~/proj/src/bash/new-note.bash -a'
