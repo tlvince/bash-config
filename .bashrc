@@ -34,7 +34,7 @@ complete -cf sudo
 # Prevent wrapping problems after window resizing
 shopt -s checkwinsize
 
-[[ -f /etc/profile.d/autojump.bash ]] && . /etc/profile.d/autojump.bash
-
 # Append to the history file, don't overwrite it
 shopt -s histappend
+
+[[ $HOME/src/bash/j/j.sh ]] && source $HOME/src/bash/j/j.sh
