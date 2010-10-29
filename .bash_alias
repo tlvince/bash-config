@@ -16,6 +16,7 @@ alias s2disk='sudo s2disk'
 alias net-profile='sudo net-profile'
 alias free='free -m'
 alias iftop='sudo iftop -i eth1'
+alias mutt="mutt -F $XDG_CONFIG_HOME/mutt/muttrc"
 
 #-----------------------------------------------------------------------
 # Package management
