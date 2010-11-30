@@ -2,9 +2,7 @@
 # Author:   Tom Vincent
 # Created:  2010-02-29
 
-#-----------------------------------------------------------------------
 # Overrides
-#-----------------------------------------------------------------------
 alias ls='ls -h --color=auto'
 alias df='df -h'
 alias du='du -hc'
@@ -17,18 +15,15 @@ alias net-profile='sudo net-profile'
 alias free='free -m'
 alias iftop='sudo iftop -i eth1'
 alias mutt="mutt -F $XDG_CONFIG_HOME/mutt/muttrc"
+alias offlineimap="offlineimap -c ~/.config/offlineimap/offlineimap.conf -o"
 
-#-----------------------------------------------------------------------
 # Package management
-#-----------------------------------------------------------------------
 alias repkg='makepkg -efi'
 alias update='sudo pacman -Syu && aurget -Syu'
 alias uninstall='sudo pacman -Rsn'
 alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
 
-#-----------------------------------------------------------------------
 # Shortcuts
-#-----------------------------------------------------------------------
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" &&
           echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'
 alias iplayer='get_iplayer --nopurge'
