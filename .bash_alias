@@ -21,6 +21,7 @@ alias offlineimap="offlineimap -c ~/.config/offlineimap/offlineimap.conf -o"
 alias repkg='makepkg -efi'
 alias update='sudo pacman -Syu && aurget -Syu'
 alias uninstall='sudo pacman -Rsn'
+alias funinstall='sudo pacman -Rsnd'
 alias clean='uninstall $(pacman -Qqdt) && sh ~/src/bash/clean-up.sh'
 
 # Shortcuts
