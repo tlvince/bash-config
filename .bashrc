@@ -24,9 +24,10 @@ libLoader ${LIBS[@]}
 PS1='[\u@\h \W]\$ '
 
 # Make sure completion is on
-if [[ -f /etc/bash_completion ]]; then
-    . /etc/bash_completion
-fi
+[[ -f /etc/bash_completion ]] && source /etc/bash_completion
+
+# Autojump
+[[ -f /etc/profile.d/autojump.bash ]] && source /etc/profile.d/autojump.bash
 
 # Add completion when sudo
 complete -cf sudo
@@ -37,4 +38,3 @@ shopt -s checkwinsize
 # Append to the history file, don't overwrite it
 shopt -s histappend
 
-[[ $HOME/src/bash/j/j.sh ]] && source $HOME/src/bash/j/j.sh
