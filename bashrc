@@ -6,11 +6,11 @@
 # Run "env" to display all environment variables in use
 # Run "cat /etc/issue" to display Linux distro info
 
-. ~/.bash_alias
-. ~/.bash_export
+[[ -f ~/.bash_alias ]] && . ~/.bash_alias
+[[ -f ~/.bash_export ]] && . ~/.bash_export
 
 # Load some library functions
-source ~/src/bash/lib/libLoader.sh
+source "$XDG_CONFIG_HOME/bash/lib/libLoader.sh"
 LIBS=(extractArchive spellChecker dictionary calculator upDirectory \
       locateWorkingDirectory pkgtools)
 libLoader ${LIBS[@]}
