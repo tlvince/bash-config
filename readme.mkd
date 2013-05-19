@@ -1,6 +1,6 @@
 # Bash config
 
-My first foray of Bash. Don't take it too seriously.
+My first foray into Bash. Don't take it too seriously.
 
 ## Usage
 
