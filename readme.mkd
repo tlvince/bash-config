@@ -1,5 +1,14 @@
 # Bash config
 
+My first foray of Bash. Don't take it too seriously.
+
+## Usage
+
+Make sure you've defined `XDG_{DATA,CACHE,CONFIG}_HOME`, then clone this
+repository using:
+
+    git clone --recursive https://github.com/tlvince/bash-config.git "$XDG_CONFIG_HOME/bash"
+
 ## Author
 
 Copyright 2010-2013 Tom Vincent <http://tlvince.com/contact>
